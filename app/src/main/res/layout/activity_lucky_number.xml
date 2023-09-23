@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roulette"
+    tools:context=".LuckyNumberActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="558dp"
+        android:text="@string/lucky_number"
+        android:textColor="@color/yellow"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="552dp"
+        android:text="@string/your_lucky_number"
+        android:textColor="@color/yellow"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="26dp"
+        android:text="@string/_0"
+        android:textColor="@color/aqua"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="62dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/baseline_share_24"
+        android:backgroundTint="@color/yellow"
+        android:textColor="#FFEB3B"
+        android:textColorHighlight="#CDDC39"
+        android:textColorHint="#FFEB3B"
+        android:textColorLink="#CFBE29"
+        app:iconTint="#DA2222"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:rippleColor="#EC7676"
+        app:strokeColor="#ED4343" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
