@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void validateInput(String username){
-        if(username == null || username.isEmpty() || username.contains(" ")){
+        if(username == null || username.isEmpty() || username.isBlank()){
             Toast.makeText(getApplicationContext(),"Please input valid username",
                     Toast.LENGTH_LONG).show();
         } else{
