@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:centerColor="@android:color/transparent"
+        android:startColor="@android:color/transparent"
+        android:type="linear"
+        android:angle="45"
+        android:endColor="@android:color/transparent"
+        />
+
+    <padding>
+        z
+    </padding>
+    <corners
+        android:radius="30dp"/>
+
+    <stroke
+        android:width="3dp"
+        android:color="#da2c38"
+        android:dashWidth="30dp"
+        android:dashGap="20dp"
+        />
+<!--    <stroke-->
+<!--        android:width="3dp"-->
+<!--        android:color="#ffb5a7"-->
+<!--        android:dashWidth="30dp"-->
+<!--        android:dashGap="25dp"-->
+<!--        />-->
+</shape>

@@ -13,6 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="558dp"
+        android:background="@drawable/frame_text"
+        android:fontFamily="@font/gilroy"
+        android:padding="7dp"
         android:text="@string/lucky_number"
         android:textColor="@color/yellow"
         android:textSize="35sp"
@@ -24,12 +27,40 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="460dp"
+
+        android:fontFamily="@font/gilroy"
+        android:text="@string/option_1"
+        android:textColor="@color/yellow"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="500dp"
+        android:fontFamily="@font/gilroy"
+        android:text="@string/option_2"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginTop="552dp"
+        android:fontFamily="@font/gilroy"
         android:text="@string/your_lucky_number"
         android:textColor="@color/yellow"
         android:textSize="32sp"
@@ -44,6 +75,7 @@
         android:layout_marginStart="184dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="26dp"
+        android:fontFamily="@font/gilroy"
         android:text="@string/_0"
         android:textColor="@color/aqua"
         android:textSize="50sp"
@@ -60,6 +92,7 @@
         android:layout_marginBottom="70dp"
         android:background="@drawable/baseline_share_24"
         android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/gilroy"
         android:textColor="#FFEB3B"
         android:textColorHighlight="#CDDC39"
         android:textColorHint="#FFEB3B"
@@ -71,5 +104,48 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:rippleColor="#EC7676"
         app:strokeColor="#ED4343" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/transparent_bg_bordered"
+        android:fontFamily="@font/gilroy"
+        android:text="@string/ok"
+        android:textColor="#4cc9f0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="194dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="460dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy"
+            android:text="@string/normal_mode"
+            android:checked="true"
+            android:textColor="@color/green"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy"
+            android:text="@string/cheat_mode"
+            android:textColor="@color/green"
+            android:textSize="25sp" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

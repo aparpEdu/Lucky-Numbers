@@ -5,4 +5,18 @@
     <string name="your_lucky_number">Your lucky number:</string>
     <string name="_0">0</string>
     <string name="im_feeling_lucky">Im feeling lucky</string>
+    <string name="alpha">alpha</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="ok">OK</string>
+    <string name="cheat_mode">Cheat mode</string>
+    <string name="normal_mode">normal mode</string>
+    <string-array name="languages">
+        <item>java</item>
+        <item>cpp</item>
+    </string-array>
+    <plurals name="numberOfSongs">
+        <item quantity="one">1 song</item>
+        <item quantity="other">%d songs</item>
+    </plurals>
 </resources>

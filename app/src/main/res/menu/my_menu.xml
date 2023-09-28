@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cool"
+        android:icon="@drawable/coolero"
+        android:title="@string/alpha"/>
+    <item
+        android:id="@+id/cool2"
+        android:icon="@drawable/coolero"
+        android:title="@android:string/autofill"
+        />
+
+</menu>

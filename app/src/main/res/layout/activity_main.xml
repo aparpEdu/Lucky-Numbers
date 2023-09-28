@@ -7,12 +7,18 @@
     android:background="@drawable/roulette"
     tools:context=".MainActivity">
 
+
+
     <TextView
         android:id="@+id/textView"
+        android:fontFamily="@font/gilroy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lucky_number"
+        android:padding="7dp"
         android:textColor="@color/yellow"
+        android:gravity="fill"
+        android:background="@drawable/frame_text"
         android:textSize="35sp"
         android:textStyle="bold"
         android:typeface="sans"
@@ -24,6 +30,7 @@
 
     <EditText
         android:id="@+id/textView2"
+        android:fontFamily="@font/gilroy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -39,6 +46,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:fontFamily="@font/gilroy"
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
