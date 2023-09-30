@@ -3,11 +3,16 @@ package com.example.luckynumber;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,7 +23,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class LuckyNumberActivity extends AppCompatActivity {
     private TextView luckyNumberText;
     private CheckBox option1, option2;
-    private RadioGroup radioGroup;
+    private Spinner spinner;
 
 
     @SuppressLint("SourceLockedOrientationActivity")
@@ -41,14 +46,40 @@ public class LuckyNumberActivity extends AppCompatActivity {
 
         option1 = findViewById(R.id.checkBox);
         option2 = findViewById(R.id.checkBox2);
-        radioGroup = findViewById(R.id.radioGroup);
+        RadioGroup radioGroup1 = findViewById(R.id.radioGroup);
         Button btn = findViewById(R.id.button3);
 
-        radioGroup.setOnCheckedChangeListener((radioGroup, i) -> {
+        //radio
+        radioGroup1.setOnCheckedChangeListener((radioGroup, i) -> {
             RadioButton radioButton = findViewById(i);
             Toast.makeText(this, radioButton.getText() + " activated", Toast.LENGTH_SHORT).show();
         });
+        //dropdown
+        Resources resources = getResources();
+        spinner = findViewById(R.id.spinner);
+        String[] colors = resources.getStringArray(R.array.color);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext(),
+                android.R.layout.simple_spinner_item, colors);
 
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ;
+        spinner.setAdapter(adapter);
+
+        spinner.setSelection(ThreadLocalRandom.current().nextInt(0, 3));
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(LuckyNumberActivity.this, "color "+ colors[i], Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+        //checkbox
         btn.setOnClickListener(view -> {
             if (option1.isChecked()){
               Toast.makeText(getApplicationContext(), "Option 1 clicked", Toast.LENGTH_SHORT).show();

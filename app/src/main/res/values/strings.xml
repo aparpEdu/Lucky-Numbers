@@ -11,9 +11,10 @@
     <string name="ok">OK</string>
     <string name="cheat_mode">Cheat mode</string>
     <string name="normal_mode">normal mode</string>
-    <string-array name="languages">
-        <item>java</item>
-        <item>cpp</item>
+    <string-array name="color">
+        <item>green</item>
+        <item>red</item>
+        <item>black</item>
     </string-array>
     <plurals name="numberOfSongs">
         <item quantity="one">1 song</item>
